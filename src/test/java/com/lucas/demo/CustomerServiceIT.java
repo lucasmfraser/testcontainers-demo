@@ -15,7 +15,7 @@ class CustomerServiceIT {
     private CustomerRepository customerRepository;
 
     @Test
-    void when() {
+    void shouldReturnAllCustomersWhenCallingFindAll() {
         List<Customer> customers = ImmutableList.copyOf(customerRepository.findAll());
         assertThat(customers).isEmpty();
     }
